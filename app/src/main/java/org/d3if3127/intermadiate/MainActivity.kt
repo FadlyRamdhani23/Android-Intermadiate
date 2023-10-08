@@ -13,8 +13,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        myButton = findViewById(R.id.my_button)
         myEditText = findViewById(R.id.my_edit_text)
+        myButton = findViewById(R.id.my_button)
         setMyButtonEnable()
         myEditText.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {
